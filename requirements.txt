@@ -6,5 +6,3 @@ keras
 tensorflow
 scikit-learn
 streamlit
-random
-re

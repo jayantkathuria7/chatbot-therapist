@@ -1,25 +1,27 @@
 # Chatbot Therapist
 
 ## Overview
-This repository contains a project to build a Chatbot Therapist using a dataset sourced from Kaggle. The goal of the project is to create a conversational agent that can engage users in therapeutic dialogue based on patterns learned from the dataset.
+The **Chatbot Therapist** project aims to build a conversational agent capable of engaging users in therapeutic dialogue. The chatbot leverages machine learning models trained on a dataset of text conversations between therapists and patients to generate empathetic and supportive responses. This project demonstrates the potential of AI in mental health applications.
 
 ## Demo
-Check out the live demo of the Chatbot Therapist [here](https://chatbot-therapist.streamlit.app/).
+You can interact with the live **Chatbot Therapist** [here](https://chatbot-therapist.streamlit.app/).
 
 ## Dataset
-The dataset used in this project is obtained from [Kaggle](https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data). It consists of (describe briefly what the dataset contains, e.g., text conversations between therapists and patients, labeled with emotions or topics).
+The dataset used for training the chatbot is sourced from [Kaggle](https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data). It contains a collection of mental health conversation data, with labeled emotions and therapeutic topics. The dataset includes dialogue between therapists and patients, which is used to train the chatbot to recognize and respond appropriately to user inputs.
 
 ## Project Structure
-- intents.json: Datset used.
-- **[Chatbot Therapist.ipynb](https://github.com/jayantkathuria7/chatbot-therapist/blob/master/Chatbot%20Therapist.ipynb)** : Jupyter notebook containing source code containing scripts and modules for data processing, model training.
-- **[app.py](https://github.com/jayantkathuria7/chatbot-therapist/blob/master/app.py)**: Source code containing python scripts using streamlit of the interface.
-- **README.md**: This file, providing an overview of the project, setup instructions, and usage details.
-- **requirements.txt**: List of Python packages required to run the project.
+
+- **intents.json**: Contains the dataset used for training, structured with intents, patterns, and responses.
+- **[Chatbot Therapist.ipynb](https://github.com/jayantkathuria7/chatbot-therapist/blob/master/Chatbot%20Therapist.ipynb)**: Jupyter notebook containing the full source code for data processing, model training, and evaluation.
+- **[app.py](https://github.com/jayantkathuria7/chatbot-therapist/blob/master/app.py)**: Python script for the chatbot’s Streamlit interface, allowing users to interact with the trained model in real time.
+- **README.md**: This file, providing an overview, setup instructions, and usage details.
+- **requirements.txt**: List of Python dependencies required to run the project.
 
 ## Setup Instructions
+
 1. **Clone the repository:**
    ```
-   git clone https://github.com/your_username/chatbot-therapist.git
+   git clone https://github.com/jayantkathuria7/chatbot-therapist.git
    cd chatbot-therapist
    ```
 
@@ -29,11 +31,21 @@ The dataset used in this project is obtained from [Kaggle](https://www.kaggle.co
    ```
 
 3. **Download the dataset:**
-   - Download the dataset from [Kaggle](https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data)
-
+   - Download the dataset from [Kaggle](https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data).
 
 4. **Running the Chatbot:**
-  ```
-  streamlit run app.py
-  ```
-  Launches the interactive chatbot interface where users can engage in a conversation with the therapist.
+   After installing the dependencies and downloading the dataset, run the following command to start the Streamlit app:
+   ```
+   streamlit run app.py
+   ```
+   This will launch the interactive chatbot interface in your web browser, where you can start a conversation with the therapist.
+
+## Future Improvements
+- Adding support for additional languages.
+- Incorporating sentiment analysis for more personalized responses.
+- Expanding the dataset to include more diverse conversational patterns.
+- Integrating a more advanced NLP model for improved contextual understanding.
+
+## Acknowledgments
+- The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data).
+- The project uses **Streamlit** for building the user interface and **scikit-learn** for machine learning model implementation.
